@@ -1,7 +1,46 @@
-/***************************
-    Site Design CSS
-***************************/
+@import url(https://fonts.googleapis.com/css?family=Cormorant:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+* {
+		font-family: "Cormorant", sans-serif;
+}
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
 
+#large-header {
+	background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title {
+		font-size: 3em;
+	}
+}
+body {
+  background:#000;
+  }
 #box {
   margin: auto;
   top: 0;
@@ -17,19 +56,16 @@
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 3em;
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
   line-height: 1.3em;
-  letter-spacing: -4px;
   margin: 0.8rem 0 0 0;
   padding-bottom: 5px;
-}
-
+  }
 p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 00;
   font-size: 1em;
   line-height: 1.65em;
   margin: 0.6em auto 0.6em auto;
@@ -42,9 +78,9 @@ p.small {
 }
 
 a,
-a:visited,
+a:duration,
 a:hover {
-  color: #333;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -56,15 +92,13 @@ a:hover {
 .google-visualization-table-tr-even,
 .google-visualization-table-tr-even td,
 .google-visualization-table-tr-even-nonstrict {
-  background-color: #fff !important;
-  color: #333 !important;
+  background-color: #000 !important;
+  
 }
-
 .google-visualization-table-tr-odd,
 .google-visualization-table-tr-odd td,
 .google-visualization-table-tr-odd-nonstrict {
-  background-color: #fff !important;
-  color: #333 !important;
+background-color: #000 !important;
 }
 
 .google-visualization-table-tr-sel,
@@ -83,14 +117,15 @@ a:hover {
 
 .google-visualization-table-td,
 .google-visualization-table-th {
-  border: 1px solid #333 !important;
+  border: 1px solid #000140 !important;
   color: #fff !important;
+  font-weight: 200
 }
 
 .google-visualization-table-tr-head,
 .google-visualization-table-tr-head td,
 .google-visualization-table-tr-head-nonstrict {
-  background-color: #333 !important;
+  background-color: #000140 !important;
   background-image: none !important;
   color: #fff !important;
 }
@@ -99,6 +134,24 @@ a:hover {
   background-image: none !important;
 }
 
+.google-visualization-table-tr-even:hover td {
+  background-color: #fff !important;
+  color: #333 !important;
+  -o-transition:color background .5s ease-in;
+  -ms-transition:color background .5s ease-in;
+  -moz-transition:color background .5s ease-in;
+  -webkit-transition:color background .5s ease-in;
+  transition:color .5s ease-out, background .5s ease-in;
+}
+.google-visualization-table-tr-odd:hover td {
+  background-color: #fff !important;
+  color: #333 !important;
+  -o-transition:color background .5s ease-in;
+  -ms-transition:color background .5s ease-in;
+  -moz-transition:color background .5s ease-in;
+  -webkit-transition:color background .5s ease-in;
+  transition:color .5s ease-out, background .5s ease-in;
+}
 
 /***************************
     Text Selection CSS
